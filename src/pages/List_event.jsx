@@ -40,7 +40,10 @@ const List_event = () => {
           <div
             key={item.id}
             className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
-          >
+          >{
+
+            console.log(item)
+          }
             <h3 className="text-xl font-semibold text-blue-700 mb-2">{item.title}</h3>
             <p className="text-gray-600 mb-1">{item.introduction}</p>
             <p className="text-gray-700 text-sm mb-2">{item.content}</p>

@@ -13,7 +13,7 @@ try {
     $stmt->execute();
     
     // Récupérer les résultats
-    $results = $stmt->fetchAll();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // die;
     // Retourner les données en JSON
     echo json_encode([
