@@ -11,7 +11,7 @@ try {
     $query = "SELECT * FROM articles ORDER BY id DESC";
     $stmt = $conn->prepare($query);
     $stmt->execute();
-    
+
     // Récupérer les résultats
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // die;
@@ -20,7 +20,6 @@ try {
         'success' => true,
         'results' => $results
     ]);
-    
 } catch (PDOException $e) {
     // En cas d'erreur, retourner un message d'erreur
     http_response_code(500);
@@ -30,4 +29,3 @@ try {
         'error' => $e->getMessage()
     ]);
 }
-?>
