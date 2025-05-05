@@ -2,8 +2,8 @@
 <?php
 $host = 'localhost';
 $dbname = 'blogphp-2025.sql';
-$username = 'root';
-$password = '';
+$username = 'aubin';
+$password = 'aubin';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
