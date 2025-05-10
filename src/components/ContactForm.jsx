@@ -4,7 +4,7 @@ const ContactForm = () => {
     const [formData, setFormData] = useState({ nom: '', email: '', password: '' });
 
     const handleChange = (e) => {
-        console.log(e.target.name);
+  
         
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -26,7 +26,7 @@ const ContactForm = () => {
             if (!response.ok) {
                 throw new Error('Erreur HTTP : ' + response.status);
             }
-    console.log(response);
+    // console.log(response);
     
             const result = await response.json(); // Important !
     
